@@ -1,0 +1,98 @@
+/* 웰컴체 */
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+
+    * {
+        outline: 0;
+    }
+
+    ul, ol, li {
+        list-style: none;
+    }
+    a{text-decoration: none;}
+
+    .wrap {
+        width: 100%;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+
+
+    /* @media (min-with: 1024px){ */
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        transition: 0.4s;
+    }
+    /* } */
+
+    
+    header, .roll{
+        background-color: #8152ad;
+    }
+
+    header {
+        position: relative;
+        z-index: 210;
+    }
+    .btn_search{
+        cursor: pointer;
+        border: none;
+        position: relative;
+        bottom: 10px;
+        margin-right: 20px;
+        background: url("/NORUN/img/검색.png")50% 50% no-repeat;
+        background-size: 20px auto;
+    }
+    
+
+    .over_list01{
+        font-family: 'OTWelcomeRA';
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 29px;
+        right: 19%;
+    }
+    .over_list01>li>a{
+        color: white;
+        margin: 0 15px;
+    }
+
+    .header_logo{
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        left: 19%;
+        width: 160px;
+    }
+
+
+    /*------------------------------- 기본, 헤더 --------------------------------------*/
+
+
+
+
+
+
