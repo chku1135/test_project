@@ -1,0 +1,306 @@
+/* 웰컴체 */
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+
+    * {
+        outline: 0;
+    }
+
+    ul, ol, li {
+        list-style: none;
+    }
+    a{text-decoration: none;}
+
+    .wrap {
+        width: 100%;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+
+
+/* Footer */
+
+#footer {
+    font-family: 'OTWelcomeRA';
+    background: #fff;
+    overflow-x: hidden;
+}
+
+    #footer > .inner {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        margin: 0 auto;
+        max-width: 84em;
+        width: calc(100% - 4em);
+    }
+
+    #footer .info {
+        padding: 4.5em 3.25em 2.5em 3.25em ;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -moz-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+
+        #footer .info h3 {
+            width: 100%;
+        }
+
+        #footer .info .about {
+            width: 50%;
+        }
+
+        #footer .info .team {
+            padding-left: 3.2em;
+            width: 50%;
+        }
+
+            #footer .info .team article {
+                display: -moz-flex;
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                -moz-align-items: center;
+                -webkit-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+            }
+
+            #footer .info .team .image {
+                border-radius: 100%;
+                margin-bottom: 1em;
+                margin-right: 1.5em;
+            }
+
+                #footer .info .team .image img {
+                    border-radius: 100%;
+                }
+
+            #footer .info .team .name {
+                display: block;
+                font-size: 17px;
+            }
+
+            #footer .info .team .title {
+                color: #aaa;
+                font-size: 0.875em;
+            }
+
+            #footer .name, span.title{
+                position: relative;
+                bottom: 9px;
+            }
+
+    #footer .contact {
+        padding: 5em 3.25em 2.5em 3.25em ;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        border-left: solid 1px rgba(144, 144, 144, 0.25);
+        width: 33.33333%;
+    }
+    section.contact h3{
+        font-size: 25px;
+        position: relative;
+        top: 5px;
+
+    }
+    ul.contact-icons{
+        margin-top: 23px;
+    }
+    ul.contact-icons>li{
+        color: rgb(138, 138, 138);
+        margin-bottom: 15px;
+    }
+    ul.contact-icons>li>a{
+        color: rgb(138, 138, 138);
+    }
+    ul.contact-icons>li.importantnum{
+        color: black;
+    }
+
+    #footer .copyright {
+        border-top: solid 1px rgba(144, 144, 144, 0.25);
+        color: #aaa;
+        font-size: 0.875em;
+        padding: 4.5em 2em;
+        text-align: center;
+        width: 100%;
+    }
+
+        #footer .copyright li {
+            border-left: solid 1px rgba(144, 144, 144, 0.25);
+            display: inline-block;
+            list-style: none;
+            margin-left: 1.5em;
+            padding-left: 1.5em;
+        }
+
+            #footer .copyright li:first-child {
+                border-left: 0;
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+    @media screen and (max-width: 1280px) {
+
+        #footer > .inner {
+            width: calc(100% - 3em);
+        }
+
+        #footer .info {
+            padding: 2.5em 2.25em 0.5em 2.25em ;
+        }
+
+            #footer .info .team {
+                padding-left: 2.25em;
+            }
+
+        #footer .contact {
+            padding: 2.5em 2.25em 0.5em 2.25em ;
+        }
+
+        #footer .copyright {
+            padding-bottom: 3em;
+            padding-top: 3em;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        #footer > .inner {
+            -moz-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        #footer .contact {
+            border-left: none;
+            width: 100%;
+            position: relative;
+        }
+
+            #footer .contact:before {
+                -moz-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                background-color: rgba(144, 144, 144, 0.25);
+                content: '';
+                height: 1px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 200vw;
+            }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #footer > .inner {
+            width: calc(100% - 2em);
+        }
+
+        #footer .info .about {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        #footer .info .team {
+            padding-left: 0;
+            width: 100%;
+        }
+
+        #footer .copyright {
+            padding-bottom: 2em;
+            padding-top: 2em;
+        }
+
+            #footer .copyright li {
+                display: block;
+                border-left: 0;
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        #footer > .inner {
+            width: 100%;
+        }
+
+        #footer .info {
+            padding: 2em 1.5em 0.1em 1.5em ;
+        }
+
+        #footer .contact {
+            padding: 2em 1.5em 0.1em 1.5em ;
+        }
+
+    }
+
+    img.team-img{
+        width: 70px;
+        height: 70px;
+    }
+    div.team{
+        position: relative;
+        bottom: 20px;
+    }
+
+    .info-name{
+        position: relative;
+        top: 10px;
+        font-size: 25px;
+    }
+
+div.about{
+    margin-top: 30px;
+}
+    .importantnum{
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .under-logo{
+        position: relative;
+        right: 43px;
+        width: 250px;
+        height: 250px;
+    }
