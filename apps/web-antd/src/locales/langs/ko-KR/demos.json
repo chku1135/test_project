@@ -1,0 +1,14 @@
+{
+  "title": "데모",
+  "antd": "Ant Design Vue",
+  "vben": {
+    "title": "프로젝트",
+    "about": "정보",
+    "document": "문서",
+    "antdv": "Ant Design Vue 버전",
+    "antdv-next": "Antdv Next 버전",
+    "naive-ui": "Naive UI 버전",
+    "element-plus": "Element Plus 버전",
+    "tdesign": "TDesign Vue 버전"
+  }
+}

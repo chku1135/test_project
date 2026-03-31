@@ -1,0 +1,15 @@
+{
+  "auth": {
+    "login": "로그인",
+    "register": "회원가입",
+    "codeLogin": "인증번호 로그인",
+    "qrcodeLogin": "QR코드 로그인",
+    "forgetPassword": "비밀번호 찾기",
+    "profile": "개인 정보"
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "analytics": "분석",
+    "workspace": "작업 공간"
+  }
+}
