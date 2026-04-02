@@ -7,6 +7,9 @@ pipeline {
         PROJECT_NAME = 'test_project_repo'
         IMAGE_NAME = 'test-project'
         FULL_IMAGE = "${HARBOR_URL}/${PROJECT_NAME}/${IMAGE_NAME}:${BUILD_NUMBER}"
+        
+        // ★ 중요: BuildKit 활성화 (Dockerfile의 --mount 옵션 사용을 위함)
+        DOCKER_BUILDKIT = '1'
     }
 
     stages {
@@ -40,7 +43,6 @@ pipeline {
             steps {
                 script {
                     // Harbor에 저장된 차트와 이미지를 활용하여 K8S 배포
-                    // oci://192.168.56.13:80/helm-repo/my-k8s-app 차트를 베이스로 사용
                     sh """
                     helm upgrade --install test-project-deploy oci://${HARBOR_URL}:80/helm-repo/my-k8s-app \
                     --version 0.1.0 \
