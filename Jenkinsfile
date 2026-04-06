@@ -41,15 +41,17 @@ pipeline {
 
         stage('Deploy to Kubernetes (Helm)') {
             steps {
-                script {
-                    // Harbor에 저장된 차트와 이미지를 활용하여 K8S 배포
-                    sh """
-                    helm upgrade --install test-project-deploy oci://${HARBOR_URL}/helm-repo/my-k8s-app \
-                    --version 0.1.0 \
-                    --set image.repository=${HARBOR_URL}/${PROJECT_NAME}/${IMAGE_NAME} \
-                    --set image.tag=${BUILD_NUMBER} \
-                    --plain-http
-                    """
+                withCredentials([file(credentialsId: 'k8s-config', variable: 'KUBECONFIG')]) {
+                    script {
+                        // Harbor에 저장된 차트와 이미지를 활용하여 K8S 배포
+                        sh """
+                        helm upgrade --install test-project-deploy oci://${HARBOR_URL}/helm-repo/my-k8s-app \
+                        --version 0.1.0 \
+                        --set image.repository=${HARBOR_URL}/${PROJECT_NAME}/${IMAGE_NAME} \
+                        --set image.tag=${BUILD_NUMBER} \
+                        --plain-http
+                        """
+                    }
                 }
             }
         }
