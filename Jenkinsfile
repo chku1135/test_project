@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         // Harbor 정보 및 신규 프로젝트(test_project_repo) 설정
-        HARBOR_URL = '192.168.56.13'
+        HARBOR_URL = '192.168.56.13:80'
         PROJECT_NAME = 'test_project_repo'
         IMAGE_NAME = 'test-project'
         FULL_IMAGE = "${HARBOR_URL}/${PROJECT_NAME}/${IMAGE_NAME}:${BUILD_NUMBER}"
