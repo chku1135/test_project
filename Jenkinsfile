@@ -46,15 +46,30 @@ pipeline {
                         // Harbor에 저장된 차트와 이미지를 활용하여 K8S 배포
                         sh """
                         helm upgrade --install test-project-deploy oci://${HARBOR_URL}/helm-repo/my-k8s-app \
-                        --version 0.1.1 \
+                        --version 0.1.0 \
                         --set image.repository=${HARBOR_URL}/${PROJECT_NAME}/${IMAGE_NAME} \
                         --set image.tag=${BUILD_NUMBER} \
+                        --set service.type=LoadBalancer \
+                        --set service.port=80 \
                         --set service.targetPort=8080 \
-                        --set livenessProbe.httpGet.port=8080 \
-                        --set readinessProbe.httpGet.port=8080 \
+                        --set service.loadBalancerIP=192.168.56.200 \
                         --plain-http
                         """
                     }
+                    // script {
+                    //     // Harbor에 저장된 차트와 이미지를 활용하여 K8S 배포
+                    //     sh """
+                    //     helm upgrade --install test-project-deploy oci://${HARBOR_URL}/helm-repo/my-k8s-app \
+                    //     --version 0.1.1 \
+                    //     --set image.repository=${HARBOR_URL}/${PROJECT_NAME}/${IMAGE_NAME} \
+                    //     --set image.tag=${BUILD_NUMBER} \
+                    //     --set service.type=LoadBalancer \
+                    //     --set service.targetPort=8080 \
+                    //     --set livenessProbe.httpGet.port=8080 \
+                    //     --set readinessProbe.httpGet.port=8080 \
+                    //     --plain-http
+                    //     """
+                    // }
                 }
             }
         }
