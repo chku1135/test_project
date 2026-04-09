@@ -13,7 +13,7 @@
     "@faker-js/faker": "catalog:",
     "jsonwebtoken": "catalog:",
     "nitropack": "catalog:",
-    "mysql2": "^3.11.0"
+    "mysql2": "^3.21.0"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "catalog:",
