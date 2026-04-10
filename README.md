@@ -1,131 +1,84 @@
 <div align="center">
-  <h1>Vue_Test_project</h1>
+  <h1>Vue Korean Project</h1>
 
-[![license](https://img.shields.io/github/license/anncwb/vue-vben-admin.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/chku1135/test_project.svg)](LICENSE)
 
 </div>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vbenjs_vue-vben-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vbenjs_vue-vben-admin) [![codeql](https://github.com/vbenjs/vue-vben-admin/actions/workflows/codeql.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/codeql.yml) [![build](https://github.com/vbenjs/vue-vben-admin/actions/workflows/build.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/build.yml) [![ci](https://github.com/vbenjs/vue-vben-admin/actions/workflows/ci.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/ci.yml) [![deploy](https://github.com/vbenjs/vue-vben-admin/actions/workflows/deploy.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/deploy.yml)
+## 소개
 
-**English** | [中文](./README.zh-CN.md) | [日本語](./README.ja-JP.md)
+**Vue Korean Project**는 [Vben Admin v5](https://github.com/vbenjs/vue-vben-admin)를 기반으로 한 한국어 최적화 관리자 템플릿입니다. 중국어 기반의 원본 프로젝트를 한국 개발 환경에 맞게 로컬라이징하였으며, 최신 `Vue 3`, `Vite`, `TypeScript` 및 `Ant Design Vue`를 사용하여 구축되었습니다.
 
-## Introduction
+## 주요 변경 사항 (Localization)
 
-Vue Vben Admin is a free and open source middle and back-end template. Using the latest `vue3`, `vite`, `TypeScript` and other mainstream technology development, the out-of-the-box middle and back-end front-end solutions can also be used for learning reference.
+- **한국어 기본 설정**: 프로젝트의 기본 언어를 `ko-KR`로 설정 완료.
+- **한글 주석 적용**: 핵심 로직(`main.ts`, `bootstrap.ts`, `adapter`, `router` 등)의 중국어 주석을 모두 한글로 번역 및 보완.
+- **언어 옵션 최적화**: 헤더의 언어 전환 메뉴에서 중국어를 제거하고 **한국어/영어** 옵션만 제공.
+- **Monorepo 아키텍처**: pnpm workspace 기반의 효율적인 패키지 관리 구조 유지.
 
-## Upgrade Notice
+## 특징
 
-This is the latest version, 5.0, and it is not compatible with previous versions. If you are starting a new project, it is recommended to use the latest version. If you wish to view the old version, please use the [v2 branch](https://github.com/vbenjs/vue-vben-admin/tree/v2).
+- **최신 기술 스택**: Vue 3, Vite, TypeScript, Tailwind CSS 기반의 고성능 환경.
+- **Ant Design Vue**: 기업용 애플리케이션에 최적화된 UI 컴포넌트 라이브러리 사용.
+- **국제화(i18n)**: 한국어와 영어를 완벽하게 지원하는 멀티 언어 시스템 내장.
+- **권한 관리(RBAC)**: 사용자 역할별 동적 메뉴 및 라우트 생성 솔루션 제공.
+- **다양한 예제**: 대시보드, 시스템 관리, 컴포넌트 활용 등 풍부한 데모 포함.
 
-## Features
+## 시작하기
 
-- **Latest Technology Stack**: Developed with cutting-edge front-end technologies like Vue 3 and Vite
-- **TypeScript**: A language for application-scale JavaScript
-- **Themes**: Multiple theme colors available with customizable options
-- **Internationalization**: Comprehensive built-in internationalization support
-- **Permissions**: Built-in solution for dynamic route-based permission generation
-
-## Preview
-
-- [Vben Admin](https://vben.pro/) - Full version Chinese site
-
-Test Account: vben/123456
-
-<div align="center">
-  <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview1.png">
-  <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview2.png">
-  <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview3.png">
-</div>
-
-### Use Gitpod
-
-Open the project in Gitpod (free online dev environment for GitHub) and start coding immediately.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vbenjs/vue-vben-admin)
-
-## Documentation
-
-[Document](https://doc.vben.pro/)
-
-## Install and Use
-
-1. Get the project code
+### 1. 소스 코드 가져오기
 
 ```bash
-git clone https://github.com/vbenjs/vue-vben-admin.git
+git clone https://github.com/chku1135/test_project.git
 ```
 
-2. Install dependencies
+### 2. 의존성 설치
 
 ```bash
-cd vue-vben-admin
-npm i -g corepack
+cd vue_project_kr
+# corepack 활성화 (필요한 경우)
+corepack enable
 pnpm install
 ```
 
-3. Run
+### 3. 개발 서버 실행
 
 ```bash
 pnpm dev
 ```
 
-4. Build
+### 4. 빌드
 
 ```bash
 pnpm build
 ```
 
-## Change Log
+## 프로젝트 구조 (Architecture)
 
-[CHANGELOG](https://github.com/vbenjs/vue-vben-admin/releases)
+- **`apps/web-antd`**: Ant Design Vue 기반의 메인 애플리케이션.
+- **`packages/`**: 모든 앱에서 공유하는 핵심 라이브러리.
+  - `@vben/locales`: 다국어 관리 및 한국어 언어팩.
+  - `@vben/preferences`: 프로젝트 환경 설정(테마, 언어 등) 엔진.
+  - `@vben/access`: 권한 가드 및 RBAC 로직.
+- **`internal/`**: 빌드 설정, 린트(Lint) 설정 등 내부 도구.
 
-## How to Contribute
+## 커밋 컨벤션 (Commit Convention)
 
-You are very welcome to join! [Raise an issue](https://github.com/anncwb/vue-vben-admin/issues/new/choose) or submit a Pull Request.
+이 프로젝트는 `commitlint`를 통해 **Conventional Commits** 규격을 강제합니다.
 
-**Pull Request Process:**
+- `feat`: 새로운 기능 추가
+- `fix`: 버그 수정
+- `docs`: 문서 변경
+- `style`: 코드 포맷팅 (로직 변경 없음)
+- `refactor`: 코드 리팩토링
+- `test`: 테스트 추가 및 수정
+- `chore`: 빌드 업무, 패키지 매니저 설정 등 (소스 변경 없음)
 
-1. Fork the code
-2. Create your branch: `git checkout -b feat/xxxx`
-3. Submit your changes: `git commit -am 'feat(function): add xxxxx'`
-4. Push your branch: `git push origin feat/xxxx`
-5. Submit `pull request`
+## 브라우저 지원
 
-## Git Contribution Submission Specification
+- 로컬 개발 환경으로 **Chrome 80+** 브라우저를 권장합니다.
+- 모던 브라우저를 지원하며, IE는 지원하지 않습니다.
 
-Reference [vue](https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md) specification ([Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))
-
-- `feat` Add new features
-- `fix` Fix the problem/BUG
-- `style` The code style is related and does not affect the running result
-- `perf` Optimization/performance improvement
-- `refactor` Refactor
-- `revert` Undo edit
-- `test` Test related
-- `docs` Documentation/notes
-- `chore` Dependency update/scaffolding configuration modification etc.
-- `ci` Continuous integration
-- `types` Type definition file changes
-
-## Browser Support
-
-The `Chrome 80+` browser is recommended for local development
-
-Support modern browsers, not IE
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| :-: | :-: | :-: | :-: |
-| last 2 versions | last 2 versions | last 2 versions | last 2 versions |
-
-## Maintainer
-
-[@Vben](https://github.com/anncwb)
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=vbenjs/vue-vben-admin&type=Date)](https://star-history.com/#vbenjs/vue-vben-admin&Date)
-
-
-## License
+## 라이선스
 
 [MIT © Vben-2020](./LICENSE)
