@@ -1,0 +1,83 @@
+{
+  "title": "예제",
+  "modal": {
+    "title": "모달"
+  },
+  "drawer": {
+    "title": "서랍(Drawer)"
+  },
+  "ellipsis": {
+    "title": "텍스트 생략"
+  },
+  "resize": {
+    "title": "드래그 조절"
+  },
+  "form": {
+    "title": "폼(Form)",
+    "basic": "기본 폼",
+    "layout": "사용자 정의 레이아웃",
+    "query": "조회 폼",
+    "rules": "폼 검증",
+    "dynamic": "동적 폼",
+    "custom": "사용자 정의 컴포넌트",
+    "api": "Api",
+    "merge": "폼 병합",
+    "scrollToError": "오류 필드로 스크롤",
+    "upload-error": "일부 파일 업로드 실패",
+    "upload-urls": "업로드 후 파일 URL",
+    "file": "파일",
+    "crop-image": "이미지 자르기",
+    "upload-image": "클릭하여 이미지 업로드"
+  },
+  "vxeTable": {
+    "title": "Vxe 테이블",
+    "basic": "기본 테이블",
+    "remote": "원격 로딩",
+    "tree": "트리 테이블",
+    "fixed": "헤더/열 고정",
+    "virtual": "가상 스크롤",
+    "editCell": "셀 편집",
+    "editRow": "행 편집",
+    "custom-cell": "사용자 정의 셀",
+    "form": "검색 폼"
+  },
+  "captcha": {
+    "title": "보안 문자(Captcha)",
+    "pointSelection": "클릭 선택 검증",
+    "sliderCaptcha": "슬라이더 검증",
+    "sliderRotateCaptcha": "회전 검증",
+    "sliderTranslateCaptcha": "퍼즐 슬라이더 검증",
+    "captchaCardTitle": "보안 검증을 완료하세요",
+    "pageDescription": "이미지의 특정 위치를 클릭하여 사용자 신원을 검증합니다.",
+    "pageTitle": "보안 문자 컴포넌트 예제",
+    "basic": "기본 사용",
+    "titlePlaceholder": "보안 문자 제목",
+    "captchaImageUrlPlaceholder": "보안 문자 이미지 (img 태그 src 속성값 지원)",
+    "hintImage": "힌트 이미지",
+    "hintText": "힌트 텍스트",
+    "hintImagePlaceholder": "힌트 이미지 (img 태그 src 속성값 지원)",
+    "hintTextPlaceholder": "힌트 텍스트",
+    "showConfirm": "확인 버튼 표시",
+    "hideConfirm": "확인 버튼 숨김",
+    "widthPlaceholder": "너비 (기본 300px)",
+    "heightPlaceholder": "높이 (기본 220px)",
+    "paddingXPlaceholder": "수평 패딩 (기본 12px)",
+    "paddingYPlaceholder": "수직 패딩 (기본 16px)",
+    "index": "인덱스:",
+    "timestamp": "타임스탬프:",
+    "x": "x:",
+    "y": "y:"
+  },
+  "layout": {
+    "col-page": "2열 레이아웃"
+  },
+  "button-group": {
+    "title": "버튼 그룹"
+  },
+  "function": {
+    "contentMenu": "컨텍스트 메뉴"
+  },
+  "cropper": {
+    "title": "이미지 자르기"
+  }
+}

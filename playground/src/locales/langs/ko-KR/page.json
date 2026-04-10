@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "login": "로그인",
+    "register": "회원가입",
+    "codeLogin": "인증번호 로그인",
+    "qrcodeLogin": "QR코드 로그인",
+    "forgetPassword": "비밀번호 찾기",
+    "sendingCode": "인증번호 전송 중",
+    "codeSentTo": "인증번호가 {0}로 전송되었습니다",
+    "profile": "개인 센터"
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "analytics": "분석 페이지",
+    "workspace": "작업대"
+  }
+}

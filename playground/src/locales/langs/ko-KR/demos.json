@@ -1,0 +1,73 @@
+{
+  "title": "데모",
+  "access": {
+    "frontendPermissions": "프론트엔드 권한",
+    "backendPermissions": "백엔드 권한",
+    "pageAccess": "페이지 접근",
+    "buttonControl": "버튼 제어",
+    "menuVisible403": "메뉴 표시(403)",
+    "superVisible": "Super 표시",
+    "adminVisible": "Admin 표시",
+    "userVisible": "User 표시"
+  },
+  "nested": {
+    "title": "중첩 메뉴",
+    "menu1": "메뉴 1",
+    "menu2": "메뉴 2",
+    "menu2_1": "메뉴 2-1",
+    "menu3": "메뉴 3",
+    "menu3_1": "메뉴 3-1",
+    "menu3_2": "메뉴 3-2",
+    "menu3_2_1": "메뉴 3-2-1"
+  },
+  "outside": {
+    "title": "외부 페이지",
+    "embedded": "내장",
+    "externalLink": "외부 링크"
+  },
+  "badge": {
+    "title": "메뉴 배지",
+    "dot": "점형 배지",
+    "text": "텍스트 배지",
+    "color": "배지 색상"
+  },
+  "activeIcon": {
+    "title": "메뉴 활성화 아이콘",
+    "children": "하위 활성화 아이콘"
+  },
+  "fallback": {
+    "title": "기본 페이지"
+  },
+  "features": {
+    "title": "기능",
+    "hideChildrenInMenu": "하위 메뉴 숨김",
+    "loginExpired": "로그인 만료",
+    "icons": "아이콘",
+    "watermark": "워터마크",
+    "tabs": "탭 페이지",
+    "tabDetail": "탭 상세 페이지",
+    "fullScreen": "전체 화면",
+    "clipboard": "클립보드",
+    "menuWithQuery": "매개변수 메뉴",
+    "openInNewWindow": "새 창에서 열기",
+    "fileDownload": "파일 다운로드",
+    "requestParamsSerializer": "매개변수 직렬화"
+  },
+  "breadcrumb": {
+    "navigation": "브레드크럼 내비게이션",
+    "lateral": "평면 모드",
+    "level": "계층 모드",
+    "levelDetail": "계층 모드 상세",
+    "lateralDetail": "평면 모드 상세"
+  },
+  "vben": {
+    "title": "프로젝트",
+    "about": "정보",
+    "document": "문서",
+    "antdv": "Ant Design Vue 버전",
+    "antdv-next": "Antdv Next 버전",
+    "naive-ui": "Naive UI 버전",
+    "element-plus": "Element Plus 버전",
+    "tdesign": "TDesign Vue 버전"
+  }
+}
