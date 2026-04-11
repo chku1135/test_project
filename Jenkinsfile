@@ -53,6 +53,8 @@ pipeline {
                         --set service.port=80 \
                         --set service.targetPort=8080 \
                         --set service.loadBalancerIP=192.168.56.200 \
+                        --set livenessProbe.httpGet.port=8080 \
+                        --set readinessProbe.httpGet.port=8080 \
                         --plain-http
                         """
                     }
