@@ -49,6 +49,7 @@ pipeline {
                         --version 0.1.0 \
                         --set image.repository=${HARBOR_URL}/${PROJECT_NAME}/${IMAGE_NAME} \
                         --set image.tag=${BUILD_NUMBER} \
+                        --set imagePullSecrets[0].name=harbor-registry-secret \
                         --set service.type=LoadBalancer \
                         --set service.port=80 \
                         --set service.targetPort=8080 \
